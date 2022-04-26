@@ -6,21 +6,16 @@ public class AlexTheLion extends Lion {
 
   public final String NAME = "Alex";
 
-  private String placeOfLiving;
-  private List<String> friends;
-
   public AlexTheLion(Feline feline) throws GenderException {
     super(feline, "Самец");
-    placeOfLiving = "Нью-Йоркский зоопарк";
-    friends = List.of("Марти", "Глория", "Мелман");
   }
 
   public String getPlaceOfLiving() {
-    return placeOfLiving;
+    return "Нью-Йоркский зоопарк";
   }
 
   public List<String> getFriends() {
-    return friends;
+    return List.of("Марти", "Глория", "Мелман");
   }
 
   @Override

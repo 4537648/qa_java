@@ -7,6 +7,7 @@ import org.junit.runner.RunWith;
 import org.mockito.Mock;
 import org.mockito.Mockito;
 import org.mockito.junit.MockitoJUnitRunner;
+import java.util.List;
 
 @RunWith(MockitoJUnitRunner.class)
 public class CatTest {
@@ -30,7 +31,9 @@ public class CatTest {
 
   @Test
   public void getFoodParentCall() throws Exception {
-    cat.getFood();
+    List<String> expected = List.of("Животные", "Птицы", "Рыба");
+    Mockito.when(feline.eatMeat()).thenReturn(expected);
+    Assert.assertEquals("Возвращено ошибочное значение пищи кошачьего", expected, cat.getFood());
     Mockito.verify(feline).eatMeat();
   }
 }

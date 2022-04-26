@@ -6,26 +6,21 @@ public class AlexTheLion extends Lion {
 
 <span class="fc" id="L7">  public final String NAME = &quot;Alex&quot;;</span>
 
-  private String placeOfLiving;
-  private List&lt;String&gt; friends;
-
   public AlexTheLion(Feline feline) throws GenderException {
-<span class="fc" id="L13">    super(feline, &quot;Самец&quot;);</span>
-<span class="fc" id="L14">    placeOfLiving = &quot;Нью-Йоркский зоопарк&quot;;</span>
-<span class="fc" id="L15">    friends = List.of(&quot;Марти&quot;, &quot;Глория&quot;, &quot;Мелман&quot;);</span>
-<span class="fc" id="L16">  }</span>
+<span class="fc" id="L10">    super(feline, &quot;Самец&quot;);</span>
+<span class="fc" id="L11">  }</span>
 
   public String getPlaceOfLiving() {
-<span class="fc" id="L19">    return placeOfLiving;</span>
+<span class="fc" id="L14">    return &quot;Нью-Йоркский зоопарк&quot;;</span>
   }
 
   public List&lt;String&gt; getFriends() {
-<span class="fc" id="L23">    return friends;</span>
+<span class="fc" id="L18">    return List.of(&quot;Марти&quot;, &quot;Глория&quot;, &quot;Мелман&quot;);</span>
   }
 
   @Override
   public int getKittens() {
-<span class="fc" id="L28">    return 0;</span>
+<span class="fc" id="L23">    return 0;</span>
   }
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.7.202105040129</span></div></body></html>
